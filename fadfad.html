@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فضفاض - علامة ملابس عصرية</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF; /* White background */
+            color: #8B4513; /* Coffee brown text */
+            direction: rtl;
+            text-align: right;
+        }
+        h1, h2, h3 {
+            color: #8B4513;
+        }
+        a {
+            color: #8B4513;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #D2691E; /* Lighter brown on hover */
+        }
+        button {
+            background-color: #8B4513;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #D2691E;
+        }
+        /* Header */
+        header {
+            background-color: #8B4513;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        /* Hero Section */
+        .hero {
+            background-color: #FFFFFF;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        /* Products Section */
+        .products {
+            padding: 50px 20px;
+            background-color: #F5F5DC; /* Light cream for contrast */
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: #FFFFFF;
+            border: 1px solid #8B4513;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            background-color: #FFFFFF;
+        }
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #F5F5DC;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #8B4513;
+            border-radius: 5px;
+        }
+        /* Footer */
+        footer {
+            background-color: #8B4513;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>فضفاض</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#about">عن العلامة</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>مرحباً بك في فضفاض</h1>
+        <p>اكتشف مجموعتنا من الملابس العصرية والمريحة، مصممة للأناقة اليومية.</p>
+        <button onclick="scrollToSection('products')">استكشف المنتجات</button>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>منتجاتنا</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200?text=قميص+فضفاض" alt="قميص فضفاض">
+                <h3>قميص فضفاض</h3>
+                <p>قميص مريح وأنيق للارتداء اليومي.</p>
+                <button>اشترِ الآن</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200?text=بنطال+فضفاض" alt="بنطال فضفاض">
+                <h3>بنطال فضفاض</h3>
+                <p>بنطال عصري يناسب جميع المناسبات.</p>
+                <button>اشترِ الآن</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200?text=فستان+فضفاض" alt="فستان فضفاض">
+                <h3>فستان فضفاض</h3>
+                <p>فستان مريح وجذاب للمرأة العصرية.</p>
+                <button>اشترِ الآن</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>عن علامة فضفاض</h2>
+        <p>فضفاض هي علامة ملابس تركز على الراحة والأناقة. نقدم تصاميم عصرية مصنوعة من مواد عالية الجودة، مناسبة للجميع.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>اتصل بنا</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="5" required></textarea>
+            <button type="submit">أرسل</button>
+        </form>
+        <p>تابعنا على: <a href="#">فيسبوك</a> | <a href="#">إنستغرام</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 فضفاض. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('شكراً لك! تم إرسال رسالتك.');
+            // Here you can add code to send the form data to a server (e.g., via fetch API)
+        });
+    </script>
+</body>
+</html>
